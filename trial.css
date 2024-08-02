@@ -1,0 +1,169 @@
+@import url(global.css);
+
+.main-section {
+    position: relative;
+    background: url('./assets/trail1.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 60px 20px;
+    color: #fff;
+    text-align: center;
+}
+.h2 {
+    font-size: 24px;
+}
+p {
+    font-size: 15px;
+}
+.intro, .trail-description {
+    position: relative;
+    padding: 20px;
+    border-radius: 50%;
+    width: 25%;
+    height: 300px;
+    margin: 20px auto;
+    z-index: 1000;
+}
+
+.trail-description::before, .intro::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #576021;
+    filter: blur(35px);
+    z-index: -1;
+    border-radius: 50%;
+}
+.intro::before {
+    filter: blur(40px);
+}
+.intro h2, .intro p, .trail-description h3, .trail-description p {
+    margin: 0;
+    padding: 20px;
+    z-index: 100;
+}
+
+.details {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px 0;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.details > div {
+    position: relative;
+    background-color: #495543;
+    padding: 20px;
+    border-radius: 15px;
+    width: 20%;
+    margin: 10px;
+}
+
+.map-section {
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.map-section iframe {
+    width: 100%;
+    max-width: 800px;
+    height: 450px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+}
+
+.image-gallery {
+    padding: 20px;
+    background-color: #A8AAA0;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.image-gallery .gallery {
+    display: flex;
+    flex-wrap: nowrap; 
+    overflow-x: auto; 
+    -webkit-overflow-scrolling: touch; 
+}
+
+.image-gallery .gallery img {
+    margin: 15px;
+    width: auto; 
+    height: 200px; 
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+    .intro, .trail-description {
+        width: 30%;
+        height: 250px;
+    }
+
+    .details > div {
+        width: 30%;
+    }
+}
+
+@media (max-width: 992px) {
+    .intro, .trail-description {
+        width: 40%;
+        height: 200px;
+    }
+
+    .details > div {
+        width: 40%;
+    }
+
+    .map-section img {
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .intro, .trail-description {
+        width: 50%;
+        height: 200px;
+    }
+
+    .details > div {
+        width: 45%;
+    }
+
+    .image-gallery .gallery img {
+        height: 150px;
+    }
+    p{
+        font-size: 10px;
+    }
+    h2{
+        font-size: 18px;
+        padding: 0px;
+    }
+}
+
+@media (max-width: 576px) {
+    .intro, .trail-description {
+        width: 80%;
+        height: 150px;
+    }
+
+    .details > div {
+        width: 90%;
+    }
+
+    .map-section img {
+        width: 100%;
+    }
+
+    .image-gallery .gallery img {
+        height: 100px;
+    }
+}
