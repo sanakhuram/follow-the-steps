@@ -1,0 +1,90 @@
+@import url(global.css);
+
+.main-background {
+    background: url('./assets/guidesandtips.jpg') no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.content {
+    max-width: 1200px;
+    margin: auto;
+    background-color: rgba(46, 46, 46, 0.8);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+section {
+    margin: 40px 0;
+}
+
+.card {
+    background-color: rgba(73, 85, 67, 0.8);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px rgba(173, 255, 47, 0.7);
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+.card ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+h2{
+    text-align: center;
+}
+
+.card ul li {
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+}
+
+.card ul li input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .content {
+        padding: 15px;
+    }
+    .card {
+        margin: 15px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .content {
+        padding: 10px;
+    }
+    .card {
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .content {
+        padding: 10px;
+    }
+    .card {
+        margin: 10px 0;
+    }
+}
