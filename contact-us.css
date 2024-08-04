@@ -10,9 +10,10 @@
 .contact-form {
     max-width: 600px;
     margin: 50px auto;
-    background-color: #2C332C;
+    background-color: rgba(58, 71, 47, 0.5);
     padding: 20px;
     border-radius: 10px;
+    box-shadow: 0px 5px 4px rgba(149, 245, 5, 0.7);
 }
 .contact-form input, .contact-form textarea, .contact-form button {
     width: 100%;
@@ -20,27 +21,43 @@
     margin: 10px 0;
     border: none;
     border-radius: 5px;
-    color: white;
 }
 .contact-form input, .contact-form textarea {
-    background-color: #95a29196;
-    color: #fff;
+    background-color: #4a4d4a96;
+    width: 80%;
+    box-shadow: 0px 5px 4px rgba(149, 245, 5, 0.7);
 }
+.contact-form input {
+    color: white;
+}
+
 .contact-form button {
     background-color: #28a745;
     color: #fff;
     cursor: pointer;
+    width: 50%;
+    box-shadow: 0px 5px 4px rgba(149, 245, 5, 0.7);
+    border: 1px solid rgb(44, 44, 44);
+}
+.contact-form button:hover{
+    background-color: rgb(30, 49, 30);
 }
 .contact-info {
     text-align: center;
     margin: 20px;
 }
-.map {
+.map-section {
+    padding: 20px;
     text-align: center;
-    margin: 50px 0;
+    color: #fff;
+    animation: fadeIn 2s ease-in-out;
 }
-.map img {
+
+.map-section iframe {
     width: 100%;
-    max-width: 600px;
+    max-width: 800px;
+    height: 450px;
+    border: 2px solid #fff;
     border-radius: 10px;
+    animation: slideUp 1.5s ease-in-out;
 }
