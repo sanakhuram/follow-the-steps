@@ -1,125 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Follow the Steps</title>
-    <link rel="stylesheet" href="maps.css">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="maps.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    />
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div class="logo">
-            <img src="./assets/logo.png" alt="Follow the Steps">
-        </div>
-        <nav>
-            <ul class="text-nav">
-                <li><a href="home.html">Home</a></li>
-                <li><a href="trails.html">Trails</a></li>
-                <li><a href="destinations.html">Destinations</a></li>
-                <li><a href="maps.html">Maps</a></li>
-                <li><a href="travel-guide.html">Travel Guide</a></li>
-                <li><a href="about-us.html">About Us</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="faqs.html">FAQs</a></li>
-            </ul>
-            <ul class="icon-nav">
-                <li><a href="home.html"><img src="./assets/home-icon.png" alt="Home"></a></li>
-                <li><a href="trails.html"><img src="./assets/trails-icon.png" alt="Trails"></a></li>
-                <li><a href="destinations.html"><img src="./assets/destinations-icon.png" alt="Destinations"></a></li>
-                <li><a href="maps.html"><img src="./assets/maps-icon.png" alt="Maps"></a></li>
-                <li><a href="travel-guide.html"><img src="./assets/travel-guide-icon.png" alt="Travel Guide"></a></li>
-                <li><a href="about-us.html"><img src="./assets/about-us-icon.png" alt="About Us"></a></li>
-                <li><a href="contact.html"><img src="./assets/contact-icon.png" alt="Contact"></a></li>
-                <li><a href="faqs.html"><img src="./assets/faqs-icon.png" alt="FAQs"></a></li>
-            </ul>
-        </nav>
+      <div class="logo">
+        <img src="./assets/logo.png" alt="Follow the Steps" />
+      </div>
+      <nav>
+        <ul class="text-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="maps.html">Trails</a></li>
+          <li><a href="destinations.html">Destinations</a></li>
+          <li><a href="maps.html" class="active">Maps</a></li>
+          <li><a href="travel-guide.html">Travel Guide</a></li>
+          <li><a href="about-us.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="faqs.html">FAQs</a></li>
+        </ul>
+        <ul class="icon-nav">
+          <li>
+            <a href="index.html"
+              ><img src="./assets/home-icon.png" alt="Home"
+            /></a>
+          </li>
+          <li>
+            <a href="trails.html"
+              ><img src="./assets/trails-icon.png" alt="Trails"
+            /></a>
+          </li>
+          <li>
+            <a href="destinations.html"
+              ><img src="./assets/destinations-icon.png" alt="Destinations"
+            /></a>
+          </li>
+          <li>
+            <a href="maps.html"
+              ><img src="./assets/maps-icon.png" alt="Maps" class="active"
+            /></a>
+          </li>
+          <li>
+            <a href="travel-guide.html"
+              ><img src="./assets/travel-guide-icon.png" alt="Travel Guide"
+            /></a>
+          </li>
+          <li>
+            <a href="about-us.html"
+              ><img src="./assets/about-us-icon.png" alt="About Us"
+            /></a>
+          </li>
+          <li>
+            <a href="contact.html"
+              ><img src="./assets/contact-icon.png" alt="Contact"
+            /></a>
+          </li>
+          <li>
+            <a href="faqs.html"
+              ><img src="./assets/faqs-icon.png" alt="FAQs"
+            /></a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <main>
-        <section class="map-section">
-            <h2>Map of Hiking Trails</h2>
-            <div id="map" style="height: 500px;"></div>
-        </section>
-        <section id="search-filter">
-            <h2>Find Your Perfect Trail</h2>
-            <form id="search-form">
-                <input type="text" id="search-bar" placeholder="Search for trails">
-                <select id="difficulty-filter">
-                    <option value="">All Difficulties</option>
-                    <option value="easy">Easy</option>
-                    <option value="moderate">Moderate</option>
-                    <option value="challenging">Challenging</option>
-                </select>
-                <select id="length-filter">
-                    <option value="">All Lengths</option>
-                    <option value="short">0-5 km</option>
-                    <option value="medium">5-10 km</option>
-                    <option value="long">10+ km</option>
-                </select>
-                <select id="region-filter">
-                    <option value="">All Regions</option>
-                    <option value="north">North</option>
-                    <option value="south">South</option>
-                    <option value="east">East</option>
-                    <option value="west">West</option>
-                </select>
-                <button type="submit">Search</button>
-            </form>
-        </section>
-        <h2>All Hiking Trails</h2>
-        <section class="trails-section">
-            <div class="trail" data-trail="bymarka">
-                <a href="trails.html">
-                    <h3>Bymarka</h3>
-                <p>A beautiful area with diverse trails suitable for all levels of hikers.</p>
-                </a>
-            </div>
-            <div class="trail" data-trail="estenstadmarka">
-                <a href="trail2.html">
-                <h3>Estenstadmarka</h3>
-                <p>Known for its lush forests and scenic views, perfect for a day out.</p>
-                </a>
-            </div>
-            <div class="trail" data-trail="ladestien">
-                <h3>Ladestien</h3>
-                <p>A coastal trail offering stunning views of the fjord and surrounding landscape.</p>
-            </div>
-            <div class="trail" data-trail="geitfjellet">
-                <h3>Geitfjellet</h3>
-                <p>Challenging trails leading to a rewarding panoramic view at the top.</p>
-            </div>
-            <div class="trail" data-trail="grakallen">
-                <h3>Gråkallen</h3>
-                <p>Popular for both summer and winter activities, with well-marked paths.</p>
-            </div>
-        </section>
+      <section class="map-section">
+        <h2>Map of Hiking Trails</h2>
+        <div id="map" style="height: 500px"></div>
+      </section>
+      <section id="search-filter">
+        <h2>Find Your Perfect Trail</h2>
+        <form id="search-form">
+          <input type="text" id="search-bar" placeholder="Search for trails" />
+          <select id="difficulty-filter">
+            <option value="">All Difficulties</option>
+            <option value="easy">Easy</option>
+            <option value="moderate">Moderate</option>
+            <option value="challenging">Challenging</option>
+          </select>
+          <select id="length-filter">
+            <option value="">All Lengths</option>
+            <option value="short">0-5 km</option>
+            <option value="medium">5-10 km</option>
+            <option value="long">10+ km</option>
+          </select>
+          <select id="region-filter">
+            <option value="">All Regions</option>
+            <option value="north">North</option>
+            <option value="south">South</option>
+            <option value="east">East</option>
+            <option value="west">West</option>
+          </select>
+          <button type="submit">Search</button>
+        </form>
+      </section>
+      <h2>All Hiking Trails</h2>
+      <section class="trails-section">
+        <div class="trail" data-trail="bymarka">
+          <a href="trails.html">
+            <h3>Bymarka</h3>
+            <p>
+              A beautiful area with diverse trails suitable for all levels of
+              hikers.
+            </p>
+          </a>
+        </div>
+        <div class="trail" data-trail="estenstadmarka">
+          <a href="trail2.html">
+            <h3>Estenstadmarka</h3>
+            <p>
+              Known for its lush forests and scenic views, perfect for a day
+              out.
+            </p>
+          </a>
+        </div>
+        <div class="trail" data-trail="ladestien">
+          <h3>Ladestien</h3>
+          <p>
+            A coastal trail offering stunning views of the fjord and surrounding
+            landscape.
+          </p>
+        </div>
+        <div class="trail" data-trail="geitfjellet">
+          <h3>Geitfjellet</h3>
+          <p>
+            Challenging trails leading to a rewarding panoramic view at the top.
+          </p>
+        </div>
+        <div class="trail" data-trail="grakallen">
+          <h3>Gråkallen</h3>
+          <p>
+            Popular for both summer and winter activities, with well-marked
+            paths.
+          </p>
+        </div>
+      </section>
     </main>
     <footer>
-        <div class="footer-content">
-            <div class="footer-logo">
-                <img src="./assets/logo.png" alt="Follow the Steps">
-            </div>
-            <div class="social-media">
-                <p>Follow us at</p>
-                <a href="#"><img src="./assets/facebook.png" alt="Facebook"></a>
-                <a href="#"><img src="./assets/youtube.png" alt="YouTube"></a>
-                <a href="#"><img src="./assets/twitter.png" alt="Twitter"></a>
-                <a href="#"><img src="./assets/instagram.png" alt="Instagram"></a>
-            </div>
-            <p>&copy; 2024 Follow the Steps. All Rights Reserved.</p>
-            <p><a href="#">Terms</a> | <a href="#">Privacy</a></p>
-            <ul class="footer-nav">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="trails.html">Trails</a></li>
-                <li><a href="maps.html">Maps</a></li>
-                <li><a href="travel-guide.html">Travel Guide</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="about-us.html">About Us</a></li>
-                <li><a href="faqs.html">FAQs</a></li>
-            </ul>
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="./assets/logo.png" alt="Follow the Steps" />
         </div>
+        <div class="social-media">
+          <p>Follow us at</p>
+          <a href="#"><img src="./assets/facebook.png" alt="Facebook" /></a>
+          <a href="#"><img src="./assets/youtube.png" alt="YouTube" /></a>
+          <a href="#"><img src="./assets/twitter.png" alt="Twitter" /></a>
+          <a href="#"><img src="./assets/instagram.png" alt="Instagram" /></a>
+        </div>
+        <p>&copy; 2024 Follow the Steps. All Rights Reserved.</p>
+        <p><a href="#">Terms</a> | <a href="#">Privacy</a></p>
+        <ul class="footer-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="trails.html">Trails</a></li>
+          <li><a href="maps.html">Maps</a></li>
+          <li><a href="travel-guide.html">Travel Guide</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="about-us.html">About Us</a></li>
+          <li><a href="faqs.html">FAQs</a></li>
+        </ul>
+      </div>
     </footer>
     <script src="maps.js"></script>
-</body>
+  </body>
 </html>

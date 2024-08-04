@@ -237,7 +237,10 @@ footer p {
     .footer-nav li a {
         font-size: 12px;
     }
-   
+   .hero img{
+    padding-top: 30px;
+    padding-bottom: 30px;
+   }
 }
 
 a{
@@ -247,7 +250,7 @@ a{
 
 .hero-button {
     position: absolute;
-    top: 65%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 10px 20px;
@@ -264,3 +267,7 @@ a{
     background-color: #24b300;
 }
 
+.text-nav a.active, .icon-nav a.active {
+    color: #b3ff00; 
+    font-weight: bold; 
+}
