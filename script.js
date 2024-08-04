@@ -12,13 +12,13 @@ document.addEventListener('DOMContentLoaded', function() {
         heroText.appendChild(span);
     });
 });
-
+//added dark /light mode toggle///
 
 document.addEventListener('DOMContentLoaded', (event) => {
     const toggleCheckbox = document.getElementById('theme-toggle');
     const body = document.body;
 
-    // Check for saved user preference in localStorage
+    
     const currentMode = localStorage.getItem('mode');
     if (currentMode) {
         body.classList.add(currentMode);
@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     toggleCheckbox.addEventListener('change', () => {
         body.classList.toggle('dark-mode');
 
-        // Save the user's preference in localStorage
+        
         if (body.classList.contains('dark-mode')) {
             localStorage.setItem('mode', 'dark-mode');
         } else {
