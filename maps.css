@@ -1,0 +1,140 @@
+@import url(global.css);
+
+.map-section {
+    padding: 20px;
+    margin: 20px 0;
+}
+
+#map {
+    height: 400px;
+    width: 100%;
+}
+
+#search-filter {
+    padding: 40px;
+    text-align: center;
+}
+
+#search-filter h2 {
+    margin-bottom: 20px;
+}
+
+#search-form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+#search-bar,
+#difficulty-filter,
+#length-filter,
+#region-filter,
+#search-form button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.trails-section {
+    padding: 20px;
+    background: url('./assets/mapsimage.jpg') no-repeat center center;
+    margin: 20px 0;
+    position: relative;
+    background-size: cover;
+    padding: 100px;
+    color: #fff;
+    text-align: center;
+}
+
+.trails-section h2 {
+    margin-bottom: 20px;
+}
+
+.trail {
+    background: rgba(51, 58, 26, 0.5);
+    margin: 10px 0;
+    padding: 40px;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin: 20px auto;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.trail:nth-child(even) {
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.trail:nth-child(odd) {
+    margin-left: 0;
+    margin-right: auto;
+}
+
+.trail::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #6d6e69;
+    filter: blur(35px);
+    z-index: -1;
+    border-radius: 50%;
+}
+
+.trail h3, .trail p {
+    margin: 0;
+    padding: 20px;
+    z-index: 2;
+    color: white;
+    text-align: center;
+}
+
+.trail p {
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .trail {
+        width: 150px;
+        height: 150px;
+    }
+    h3{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .trail {
+        width: 100px;
+        height: 100px;
+        padding: 10px;
+    }
+
+    .trail h3, .trail p {
+        padding: 10px;
+    }
+
+    .trail p {
+        font-size: 12px;
+    }
+}
+h2{
+    text-align: center;
+}
+.trail {
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.trail:hover {
+    transform: scale(1.1);
+    background: rgba(172, 207, 43, 0.7);
+}

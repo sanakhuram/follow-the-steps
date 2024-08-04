@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const text = heroText.textContent;
     heroText.innerHTML = '';
 
-    const colors = ['#97A15C', '#6A7239', '#F2993F', '#D3F210']; // Array of colors to cycle through
+    const colors = ['#97A15C', '#6A7239', '#F2993F', '#D3F210']; // Array of colors 
 
     text.split('').forEach((letter, index) => {
         const span = document.createElement('span');

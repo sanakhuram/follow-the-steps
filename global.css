@@ -46,7 +46,7 @@ nav ul.text-nav li a {
 }
 
 nav ul.text-nav li a:hover {
-    color: rgb(116, 236, 46);
+    color: rgb(131, 236, 46);
 }
 
 nav ul.icon-nav {
@@ -158,7 +158,7 @@ footer p {
 }
 
 .footer-nav li a:hover {
-    color: rgb(121, 227, 45);
+    color: rgb(133, 227, 45);
 }
 
 /* Responsive Design */
@@ -244,3 +244,23 @@ a{
     text-decoration: none;
     color: white;
 }
+
+.hero-button {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    font-size: 18px;
+    color: white;
+    background-color: #2e3d2f;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.hero-button:hover {
+    background-color: #24b300;
+}
+
