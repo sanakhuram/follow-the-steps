@@ -13,3 +13,26 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    const toggleCheckbox = document.getElementById('theme-toggle');
+    const body = document.body;
+
+    // Check for saved user preference in localStorage
+    const currentMode = localStorage.getItem('mode');
+    if (currentMode) {
+        body.classList.add(currentMode);
+        toggleCheckbox.checked = currentMode === 'dark-mode';
+    }
+
+    toggleCheckbox.addEventListener('change', () => {
+        body.classList.toggle('dark-mode');
+
+        // Save the user's preference in localStorage
+        if (body.classList.contains('dark-mode')) {
+            localStorage.setItem('mode', 'dark-mode');
+        } else {
+            localStorage.removeItem('mode');
+        }
+    });
+});
