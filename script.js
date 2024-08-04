@@ -12,27 +12,5 @@ document.addEventListener('DOMContentLoaded', function() {
         heroText.appendChild(span);
     });
 });
-//added dark /light mode toggle///
 
-document.addEventListener('DOMContentLoaded', (event) => {
-    const toggleCheckbox = document.getElementById('theme-toggle');
-    const body = document.body;
 
-    
-    const currentMode = localStorage.getItem('mode');
-    if (currentMode) {
-        body.classList.add(currentMode);
-        toggleCheckbox.checked = currentMode === 'dark-mode';
-    }
-
-    toggleCheckbox.addEventListener('change', () => {
-        body.classList.toggle('dark-mode');
-
-        
-        if (body.classList.contains('dark-mode')) {
-            localStorage.setItem('mode', 'dark-mode');
-        } else {
-            localStorage.removeItem('mode');
-        }
-    });
-});
