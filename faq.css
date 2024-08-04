@@ -1,0 +1,89 @@
+@import url(global.css);
+
+.accordion {
+  background-color: #495543;
+  color: #f8f8f8;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 18px;
+  max-width: 1200px;
+  transition: background-color 0.4s ease;
+  margin: 5px 0;
+  border-radius: 20px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(211, 242, 16, 0.49);
+}
+
+.accordion:hover {
+  background-color: #8cb42d;
+  color: black;
+}
+
+.accordion.active {
+  background-color: #456338;
+}
+
+.accordion:after {
+  content: '\002B';
+  font-size: 13px;
+  color: #495543;
+  float: right;
+  margin-left: 5px;
+  color: #a7d32f;
+}
+
+.accordion.active:after {
+  content: "\2212";
+  color: #a7d32f;
+}
+
+.panel {
+  padding: 0 30px;
+  background-color: #1d2718;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  border: 1px solid #a7d32f;
+  border-top: none;
+  max-width: 1200px;
+  border-radius: 20px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(211, 242, 16, 0.49);
+
+}
+
+.hero1 {
+    position: relative;
+}
+
+.hero1 img {
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+}
+
+.hero1-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hero1-text h1 {
+    font-size: 36px;
+    margin: 0;
+}
+@media (max-width: 768px){
+    .hero1-text h1{
+        font-size: 18px;
+    }
+    .hero1 img{
+        height: auto;
+    }
+}
