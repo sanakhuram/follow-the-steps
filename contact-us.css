@@ -1,0 +1,46 @@
+@import url(global.css);
+.main-section {
+    position: relative;
+    background: url('./assets/contactus.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 60px 20px;
+    color: #fff;
+    text-align: center;
+}
+.contact-form {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #2C332C;
+    padding: 20px;
+    border-radius: 10px;
+}
+.contact-form input, .contact-form textarea, .contact-form button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+.contact-form input, .contact-form textarea {
+    background-color: #95a29196;
+    color: #fff;
+}
+.contact-form button {
+    background-color: #28a745;
+    color: #fff;
+    cursor: pointer;
+}
+.contact-info {
+    text-align: center;
+    margin: 20px;
+}
+.map {
+    text-align: center;
+    margin: 50px 0;
+}
+.map img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+}
