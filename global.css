@@ -310,7 +310,8 @@ a{
 }
 
 .icon-nav li a.active img {
-    filter: invert(48%) sepia(100%) saturate(400%) hue-rotate(75deg) brightness(100%);
+    filter: invert(54%) sepia(90%) saturate(600%) hue-rotate(70deg) brightness(95%);
 }
+
 
 
