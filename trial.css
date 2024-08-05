@@ -174,3 +174,17 @@ h3{
         height: 100px;
     }
 }
+.book-tour button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    
+  }
+  
+  .book-tour button:hover {
+    background-color: #2a502a;
+  }
+  

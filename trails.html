@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Follow the Steps</title>
-    <link rel="stylesheet" href="trial.css" />
+    <link rel="stylesheet" href="trial.css">
+    <link rel="stylesheet" href="tips.css">
   </head>
   <body>
     <header>
@@ -131,6 +132,68 @@
         <img src="./assets/5.jpg" alt="Scenic view" />
       </div>
     </section>
+    <section class="book-tour">
+      <h2>Book a Tour</h2>
+      <button id="showFormButton">Book Now</button>
+      <form
+        id="tourForm"
+        action="submit-tour-booking"
+        method="post"
+        style="display: none;"
+        onsubmit="return submitForm(event)"
+      >
+        <div class="form-group">
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone:</label>
+          <input type="tel" id="phone" name="phone" required />
+        </div>
+        <div class="form-group">
+          <label for="people">Number of People:</label>
+          <input type="number" id="people" name="people" min="1" required />
+        </div>
+        <div class="form-group">
+          <label for="date">Select a Date:</label>
+          <input type="date" id="date" name="date" required />
+        </div>
+        <div class="form-group">
+          <label for="trail">Select a Trail:</label>
+          <select id="trail" name="trail" required>
+            <option value="">Choose a Trail</option>
+            <option value="trail1">Trail 1</option>
+            <option value="trail2">Trail 2</option>
+            <option value="trail3">Trail 3</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="destination">Select a Destination:</label>
+          <select id="destination" name="destination" required>
+            <option value="">Choose a Destination</option>
+            <option value="destination1">Bymarka</option>
+            <option value="destination2">Estenstadmarka</option>
+            <option value="destination3">Ladestien</option>
+            <option value="destination4">Geitfjellet</option>
+            <option value="destination5">Gråkallen</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <button type="submit">Book Now</button>
+        </div>
+      </form>
+      <div
+        id="confirmationMessage"
+        class="confirmation-message"
+        style="display: none"
+      >
+        Your tour is booked!
+      </div>
+    </section>
     <footer>
       <div class="footer-content">
         <div class="footer-logo">
@@ -157,6 +220,6 @@
       </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="forms.js"></script>
   </body>
 </html>

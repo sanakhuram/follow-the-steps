@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Allerta', sans-serif;
     color: #fff;
     background-color: rgb(28, 32, 25);
 }
@@ -162,6 +162,16 @@ footer p {
 }
 
 /* Responsive Design */
+@media (max-width: 1200px){
+    .hero-text{
+        font-size: 40px;
+}
+.hero img{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    box-shadow: 0px 5px 10px rgba(247, 251, 1, 0.5);
+}
+}
 
 @media (max-width: 768px) {
     nav ul.text-nav {
@@ -273,3 +283,4 @@ a{
     color: #b3ff00; 
     font-weight: bold; 
 }
+

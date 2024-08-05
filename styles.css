@@ -1,6 +1,18 @@
 @import url(global.css);
 
-
+.about-text {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    font-weight: 1000;
+    color: rgb(60, 68, 62);
+    transition: color 0.3s ease;
+}
+.about-text:hover{
+    color: rgba(157, 250, 17, 0.966);
+}
 
 .hero1 {
     position: relative;
@@ -241,6 +253,10 @@
     .hero1-text p {
         font-size: 15px;
     }
+    .about-text{
+        color: greenyellow;
+        font-size: 30px;
+    }
 }
 
 
@@ -315,6 +331,10 @@
     }
     .values {
         margin: 15px 0;
+    }
+    .about-text{
+        font-size: 20px;
+        color: yellowgreen;
     }
 }
 
