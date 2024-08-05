@@ -22,6 +22,7 @@
     width: 100%;
     height: 60vh;
     object-fit: cover;
+    animation: fadeIn 1s ease-in;
 }
 
 .hero1-text {
@@ -33,6 +34,7 @@
     background-color: rgba(0, 0, 0, 0.5);
     padding: 20px;
     border-radius: 10px;
+    animation: slideIn 1s ease-out;
 }
 
 .hero1-text h1 {
@@ -53,6 +55,7 @@
 
 .trails h2 {
     margin-bottom: 20px;
+    animation: fadeIn 2s ease-in;
 }
 
 .trail-grid {
@@ -85,6 +88,12 @@
 .trail p {
     margin: 0;
 }
+/* Click Animation */
+.trail:hover {
+    animation: clickAnim 0.4s forwards;
+}
+
+
 
 .seasons {
     display: flex;
@@ -339,3 +348,33 @@
 }
 
 
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translate(-50%, -60%);
+    }
+    to {
+        transform: translate(-50%, -50%);
+    }
+}
+
+@keyframes clickAnim {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.9);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

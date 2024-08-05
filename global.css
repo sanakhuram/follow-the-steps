@@ -2,7 +2,7 @@ body {
     margin: 0;
     font-family: 'Allerta', sans-serif;
     color: #fff;
-    background-color: rgb(28, 32, 25);
+    background-color: #2C332C;
 }
 
 header {
@@ -313,3 +313,28 @@ a{
     filter: invert(48%) sepia(100%) saturate(400%) hue-rotate(75deg) brightness(100%);
 }
 
+.hero-text span {
+    display: inline-block;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+.hero-text span:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.hero-text span:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+.hero-text span:nth-child(3) {
+    animation-delay: 0.2s;
+}
+
+/* Add more nth-child rules as needed for each character */
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
