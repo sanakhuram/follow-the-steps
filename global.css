@@ -13,7 +13,7 @@ header {
     padding: 20px;
     box-shadow: 0px 10px 20px rgba(173, 255, 47, 0.7); /* Increase size and opacity */
     position: relative; /* Ensure it's positioned above other elements */
-    z-index: 10; /* Ensure it's on top of other elements */
+    z-index: 10; 
 }
 
 header .logo img {
@@ -283,4 +283,16 @@ a{
     color: #b3ff00; 
     font-weight: bold; 
 }
+.icon-nav li a img {
+    width: 25px;
+    height: 25px;
+    filter: brightness(0) invert(75%);
+    transition: filter 0.3s ease;
+}
+
+.icon-nav li a img:hover {
+    filter: brightness(0) invert(50%);
+}
+
+
 
