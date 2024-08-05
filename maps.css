@@ -3,20 +3,24 @@
 .map-section {
     padding: 20px;
     margin: 20px 0;
+    animation: fadeIn 2s ease-in-out;
 }
 
 #map {
     height: 400px;
     width: 100%;
+    animation: slideUp 1.5s ease-out;
 }
 
 #search-filter {
     padding: 40px;
     text-align: center;
+    animation: fadeIn 2s ease-in-out;
 }
 
 #search-filter h2 {
     margin-bottom: 20px;
+    animation: fadeIn 2s ease-in-out;
 }
 
 #search-form {
@@ -24,6 +28,7 @@
     justify-content: center;
     gap: 10px;
     flex-wrap: wrap;
+    animation: slideUp 1.5s ease-out;
 }
 
 #search-bar,
@@ -34,6 +39,7 @@
     padding: 10px;
     border: none;
     border-radius: 5px;
+    animation: fadeIn 2s ease-in-out;
 }
 
 .trails-section {
@@ -45,10 +51,12 @@
     padding: 100px;
     color: #fff;
     text-align: center;
+    animation: fadeIn 2s ease-in-out;
 }
 
 .trails-section h2 {
     margin-bottom: 20px;
+    animation: fadeIn 2s ease-in-out;
 }
 
 .trail {
@@ -65,6 +73,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    animation: slideUp 1.5s ease-out;
 }
 
 .trail:nth-child(even) {
@@ -88,6 +97,7 @@
     filter: blur(35px);
     z-index: -1;
     border-radius: 50%;
+    animation: pulse 2s infinite;
 }
 
 .trail h3, .trail p {
@@ -127,14 +137,49 @@
         font-size: 12px;
     }
 }
-h2{
+
+h2 {
     text-align: center;
 }
+
 .trail {
     transition: transform 0.3s, background-color 0.3s;
+    animation: pulse 2s infinite;
 }
 
 .trail:hover {
     transform: scale(1.1);
     background: rgba(172, 207, 43, 0.7);
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
 }

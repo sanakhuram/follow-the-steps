@@ -1,11 +1,44 @@
 @import url(global.css);
 
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
 .main-background {
     background: url('./assets/guidesandtips.jpg') no-repeat center center fixed;
     background-size: cover;
     position: relative;
     min-height: 100vh;
     padding: 20px;
+    animation: fadeIn 2s ease-in-out;
 }
 
 .content {
@@ -17,16 +50,19 @@
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
     margin-top: 10%;
     margin-bottom: 10%;
+    animation: slideUp 1.5s ease-out;
 }
 
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
+    animation: fadeIn 2s ease-in-out;
 }
 
 section {
     margin: 40px 0;
+    animation: fadeIn 2s ease-in-out;
 }
 
 .card {
@@ -35,6 +71,7 @@ section {
     margin: 20px 0;
     border-radius: 10px;
     box-shadow: 0px 5px 5px rgba(173, 255, 47, 0.7);
+    animation: slideUp 1.5s ease-out;
 }
 
 .card h3 {
@@ -46,8 +83,9 @@ section {
     padding: 0;
 }
 
-h2{
+h2 {
     text-align: center;
+    animation: fadeIn 2s ease-in-out;
 }
 
 .card ul li {
@@ -95,14 +133,17 @@ h2{
     border-radius: 10px;
     box-shadow: 0px 5px 10px rgba(234, 238, 26, 0.5);
     margin: 50px;
+    animation: slideUp 1.5s ease-out;
 }
 
 .book-tour h2 {
     margin-top: 0;
+    animation: fadeIn 2s ease-in-out;
 }
 
 .form-group {
     margin-bottom: 20px;
+    animation: fadeIn 2s ease-in-out;
 }
 
 .form-group label {
@@ -128,6 +169,7 @@ h2{
     border-radius: 5px;
     cursor: pointer;
     box-sizing: border-box;
+    animation: pulse 2s infinite;
 }
 
 .form-group button:hover {
@@ -142,4 +184,5 @@ h2{
     border-radius: 5px;
     text-align: center;
     box-sizing: border-box;
+    animation: fadeIn 2s ease-in-out;
 }

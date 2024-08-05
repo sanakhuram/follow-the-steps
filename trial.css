@@ -1,5 +1,36 @@
 @import url(global.css);
 
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
 
 .main-section {
     position: relative;
@@ -8,13 +39,17 @@
     padding: 60px 20px;
     color: #fff;
     text-align: center;
+    animation: fadeIn 2s ease-in-out;
 }
+
 .h2 {
     font-size: 24px;
 }
+
 p {
     font-size: 15px;
 }
+
 .intro, .trail-description {
     position: relative;
     padding: 20px;
@@ -23,6 +58,7 @@ p {
     height: 300px;
     margin: 20px auto;
     z-index: 1000;
+    animation: slideUp 1.5s ease-out;
 }
 
 .trail-description::before, .intro::before {
@@ -37,13 +73,16 @@ p {
     z-index: -1;
     border-radius: 50%;
 }
+
 .intro::before {
     filter: blur(40px);
 }
+
 .intro h2, .intro p, .trail-description h3, .trail-description p {
     margin: 0;
     padding: 20px;
     z-index: 100;
+    
 }
 
 .details {
@@ -53,6 +92,7 @@ p {
     margin: 20px 0;
     font-size: 15px;
     line-height: 1.5;
+    animation: fadeIn 2s ease-in-out;
 }
 
 .details > div {
@@ -62,12 +102,14 @@ p {
     border-radius: 15px;
     width: 20%;
     margin: 10px;
+    animation: slideUp 1.5s ease-out;
 }
 
 .map-section {
     padding: 20px;
     text-align: center;
     color: #fff;
+    animation: fadeIn 2s ease-in-out;
 }
 
 .map-section iframe {
@@ -84,6 +126,7 @@ p {
     color: #fff;
     text-align: center;
     margin-bottom: 40px;
+    animation: fadeIn 2s ease-in-out;
 }
 
 .image-gallery .gallery {
@@ -98,9 +141,9 @@ p {
     width: auto; 
     height: 200px; 
     border-radius: 10px;
-  
 }
-h3{
+
+h3 {
     text-align: center;
 }
 
@@ -129,7 +172,8 @@ h3{
     .map-section img {
         width: 90%;
     }
-    h3{
+
+    h3 {
         font-size: 15px;
     }
 }
@@ -147,10 +191,12 @@ h3{
     .image-gallery .gallery img {
         height: 150px;
     }
-    p{
+
+    p {
         font-size: 10px;
     }
-    h2{
+
+    h2 {
         font-size: 18px;
         padding: 0px;
     }
@@ -174,6 +220,7 @@ h3{
         height: 100px;
     }
 }
+
 .book-tour button {
     background-color: #4CAF50;
     color: white;
@@ -181,10 +228,9 @@ h3{
     padding: 10px 20px;
     cursor: pointer;
     border-radius: 5px;
-    
-  }
-  
-  .book-tour button:hover {
+    animation: fadeIn 2s ease-in-out;
+}
+
+.book-tour button:hover {
     background-color: #2a502a;
-  }
-  
+}
