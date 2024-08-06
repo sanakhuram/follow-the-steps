@@ -1,7 +1,7 @@
 @import url(global.css);
 .main-section {
     position: relative;
-    background: url('./assets/contactus.jpg') no-repeat center center;
+    background: url('../assets/contactus.jpg') no-repeat center center;
     background-size: cover;
     padding: 60px 20px;
     color: #fff;
