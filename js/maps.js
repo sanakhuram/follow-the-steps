@@ -1,9 +1,9 @@
 function initMap() {
     // Define trail locations
     var trails = {
-        bymarka: { lat: 63.4098, lng: 10.3653 },
-        estenstadmarka: { lat: 63.4098, lng: 10.4753 },
-        ladestien: { lat: 63.4454, lng: 10.4395 },
+        bymarka: { lat: 63.4098, lng: 10.2848897},
+        estenstadmarka: { lat: 63.384387, lng: 10.469506 },
+        ladestien: { lat: 63.418629, lng: 10.506073 },
         geitfjellet: { lat: 63.4012, lng: 10.3965 },
         grakallen: { lat: 63.4252, lng: 10.2879 }
     };
@@ -13,7 +13,7 @@ function initMap() {
 
     // Add the OpenStreetMap tiles
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        maxZoom: 19,
+        maxZoom: 20,
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(map);
 
