@@ -35,7 +35,7 @@
 
 .main-section {
     position: relative;
-    background: url('./assets/trail2.jpg') no-repeat center center;
+    background: url('../assets/trail2.jpg') no-repeat center center;
     background-size: cover;
     padding: 60px 20px;
     color: #fff;

@@ -44,7 +44,7 @@
 
 .trails-section {
     padding: 20px;
-    background: url('./assets/mapsimage.jpg') no-repeat center center;
+    background: url('../assets/mapsimage.jpg') no-repeat center center;
     margin: 20px 0;
     position: relative;
     background-size: cover;

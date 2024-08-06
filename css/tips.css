@@ -33,7 +33,7 @@
 }
 
 .main-background {
-    background: url('./assets/guidesandtips.jpg') no-repeat center center fixed;
+    background: url('../assets/guidesandtips.jpg') no-repeat center center fixed;
     background-size: cover;
     position: relative;
     min-height: 100vh;
