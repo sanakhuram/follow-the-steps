@@ -4,10 +4,13 @@
     position: relative;
     background: url('../assets/contactus.jpg') no-repeat center center;
     background-size: cover;
+    background-attachment: fixed; 
     padding: 60px 20px;
     color: #fff;
     text-align: center;
 }
+
+
 
 .contact-form {
     max-width: 600px;
@@ -30,22 +33,22 @@
     background-color: #4a4d4a96;
     width: 80%;
     box-shadow: 0px 5px 4px rgba(149, 245, 5, 0.7);
-    color: white; /* Ensures input text is white */
+    color: white; 
 }
 
-/* Make placeholder text white */
+
 .contact-form input::placeholder,
 .contact-form textarea::placeholder {
     color: white;
-    opacity: 1; /* Ensures placeholder is fully visible */
+    opacity: 1; 
 }
 
-/* Make label text white if you choose to display them */
+
 .contact-form label {
     color: white;
-    font-weight: bold; /* Optionally make labels bold */
-    display: block; /* Ensure the label is on its own line */
-    margin-bottom: 5px; /* Add some space below the label */
+    font-weight: bold; 
+    display: block; 
+    margin-bottom: 5px; 
 }
 
 .contact-form button {
