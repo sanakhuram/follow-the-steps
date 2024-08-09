@@ -7,7 +7,7 @@
     transform: translate(-50%, -50%);
     font-size: 80px;
     font-weight: 1000;
-    color: rgb(60, 68, 62);
+    color: rgb(104, 107, 105);
     transition: color 0.3s ease;
 }
 .about-text:hover{
