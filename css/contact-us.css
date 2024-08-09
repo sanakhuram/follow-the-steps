@@ -4,7 +4,6 @@
     position: relative;
     background: url('../assets/contactus.jpg') no-repeat center center;
     background-size: cover;
-    background-attachment: fixed; 
     padding: 60px 20px;
     color: #fff;
     text-align: center;
