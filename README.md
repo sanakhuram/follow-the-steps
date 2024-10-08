@@ -1,5 +1,7 @@
 
 # Follow the Steps
+![image](https://github.com/user-attachments/assets/0849be68-405f-47c1-b0d3-1b798a166be7)
+
 
 "Follow the Steps" is a website dedicated to providing detailed information about various hiking trails, destinations, and maps in Trondheim City in Norway. It serves as a comprehensive travel guide for outdoor enthusiasts.
 
